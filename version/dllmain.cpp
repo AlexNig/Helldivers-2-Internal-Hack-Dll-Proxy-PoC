@@ -74,33 +74,33 @@ DWORD WINAPI Payload(LPVOID lpParam)
 
     //Console Menu
     std::vector<Checkbox> checkboxes = { 
-          {_XOR_("Inf Health"), false}
-        , {_XOR_("Inf Grenades"), false}
-        , {_XOR_("Inf Grenades(Legit)"), false}
-        , {_XOR_("Inf Ammo"), false}
-        , {_XOR_("Inf Ammo(Legit)"), false}
-        , {_XOR_("Inf Syringes"), false}
-        , {_XOR_("Inf Syringes(Legit)"), false}
-        , {_XOR_("Inf Stamina"), false}
-        , {_XOR_("Inf Stratagems"), false}
-        , {_XOR_("MoveSpeed X6"), false}
-        , {_XOR_("Inf Mission Time"), false}
+          {_XOR_("Inf xxx Health"), false}
+        , {_XOR_("Inf xxx Grenades"), false}
+        , {_XOR_("Inf xxx Grenades(Legit)"), false}
+        , {_XOR_("Inf xxx Ammo"), false}
+        , {_XOR_("Inf xxx Ammo(Legit)"), false}
+        , {_XOR_("Inf xxx Syringes"), false}
+        , {_XOR_("Inf xxx Syringes(Legit)"), false}
+        , {_XOR_("Inf xxx Stamina"), false}
+        , {_XOR_("Inf xxx Stratagems"), false}
+        , {_XOR_("Move xxx Speed X6"), false}
+        , {_XOR_("Inf xxx Mission Time"), false}
         //, {"One / Two Hit Kill ( Bile Titan Bug, Aim Only Head )", false}
-        , {_XOR_("No Reload"), false}
-        , {_XOR_("Max Resources"), false}
-        , {_XOR_("Add 5 Samples"), false}
-        , {_XOR_("No Recoil"), false}
-        , {_XOR_("Inf Backpack"), false}
-        , {_XOR_("Inf Special Weapon"), false}
-        , {_XOR_("No Laser Cannon Overheat"), false}
-        , {_XOR_("Instant Railgun"), false}
-        , {_XOR_("Show All Map Icons"), false}
-        , {_XOR_("No Stationary Turret Overheat"), false}
-        , {_XOR_("No Backpack Shield Cooldown"), false}
-        , {_XOR_("No JetPack Cooldown"), false}
-        , {_XOR_("All Stratagems in Loadout"), false}
-        , {_XOR_("All Equipment in Armory"), false}
-        , {_XOR_("All Armor in Armory"), false}
+        , {_XOR_("No xxx Reload"), false}
+        , {_XOR_("Max xxx Resources"), false}
+        , {_XOR_("Add xxx 5 Samples"), false}
+        , {_XOR_("No xxx Recoil"), false}
+        , {_XOR_("Inf xxx Backpack"), false}
+        , {_XOR_("Inf xxx Special Weapon"), false}
+        , {_XOR_("No xxx Laser Cannon Overheat"), false}
+        , {_XOR_("Instant xxx Railgun"), false}
+        , {_XOR_("Show All xxx Map Icons"), false}
+        , {_XOR_("No Stationary xxx Turret Overheat"), false}
+        , {_XOR_("No Backpack xxx Shield Cooldown"), false}
+        , {_XOR_("No JetPack xxx Cooldown"), false}
+        , {_XOR_("All Stratagems xxx in Loadout"), false}
+        , {_XOR_("All Equipment xxx in Armory"), false}
+        , {_XOR_("All Armor xxx in Armory"), false}
     
     }; // Initialize all checkboxes to unchecked
     const int numCheckboxes = checkboxes.size();
@@ -162,7 +162,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
         if (checkboxes[i].checked)
         {
 
-            if (checkboxes[i].title == _XOR_("Inf Health"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Health"))
             {
                 if (!gData.InfHealth) // no need but its old code when activate using hotkey, but need to much hotkey for all feature
                 {
@@ -205,7 +205,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Grenades"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Grenades"))
             {
                 if (!gData.InfGrenades)
                 {
@@ -216,7 +216,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Grenades(Legit)"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Grenades(Legit)"))
             {
                 if (!gData.InfGrenadesLegit && !gData.InfGrenades)
                 {
@@ -238,7 +238,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Ammo"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Ammo"))
             {
                 if (!gData.InfAmmo)
                 {
@@ -250,7 +250,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Ammo(Legit)"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Ammo(Legit)"))
             {
                 if (!gData.InfAmmoLegit && !gData.InfAmmo)
                 {
@@ -272,7 +272,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Syringes"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Syringes"))
             {
                 if (!gData.InfSyringes)
                 {
@@ -283,7 +283,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Syringes(Legit)"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Syringes(Legit)"))
             {
                 if (!gData.InfSyringesLegit && !gData.InfSyringes)
                 {
@@ -306,7 +306,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Stamina"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Stamina"))
             {
                 if (!gData.InfStamina)
                 {
@@ -318,7 +318,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Stratagems"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Stratagems"))
             {
                 if (!gData.InfStratagems)
                 {
@@ -330,7 +330,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Mission Time"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Mission Time"))
             {
                 if (!gData.InfMissionTime)
                 {
@@ -341,7 +341,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("No Reload"))
+            if (checkboxes[i].title == _XOR_("No xxx Reload"))
             {
                 if (!gData.NoReload)
                 {
@@ -364,7 +364,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Max Resources"))
+            if (checkboxes[i].title == _XOR_("Max xxx Resources"))
             {
                 if (!gData.MaxResources)
                 {
@@ -388,7 +388,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Add 5 Samples"))
+            if (checkboxes[i].title == _XOR_("Add xxx 5 Samples"))
             {
                 if (!gData.Add5Resources && !gData.MaxResources)
                 {
@@ -408,7 +408,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Instant Railgun"))
+            if (checkboxes[i].title == _XOR_("No xxx Recoil"))
             {
                 if (!gData.InstantRailGun)
                 {
@@ -430,7 +430,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
             }
 
             
-            if (checkboxes[i].title == _XOR_("MoveSpeed X6"))
+            if (checkboxes[i].title == _XOR_("Move xxx Speed X6"))
             {
                 if (!gData.Speedhack)
                 {
@@ -453,7 +453,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("No Recoil"))
+            if (checkboxes[i].title == _XOR_("No xxx Recoil"))
             {
                 if (!gData.Recoil)
                 {
@@ -469,7 +469,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("No Laser Cannon Overheat"))
+            if (checkboxes[i].title == _XOR_("No xxx Laser Cannon Overheat"))
             {
                 if (!gData.NoCannonOverheat)
                 {
@@ -480,7 +480,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Inf Special Weapon"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Special Weapon"))
             {
                 if (!gData.InfSpecWeapon)
                 {
@@ -502,7 +502,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("No JetPack Cooldown"))
+            if (checkboxes[i].title == _XOR_("No JetPack xxx Cooldown"))
             {
                 if (!gData.JetpackNoCD)
                 {
@@ -513,7 +513,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("No Backpack Shield Cooldown"))
+            if (checkboxes[i].title == _XOR_("No Backpack xxx Shield Cooldown"))
             {
                 if (!gData.ShieldNoCD)
                 {
@@ -530,7 +530,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
             }
             
 
-            if (checkboxes[i].title == _XOR_("Inf Backpack"))
+            if (checkboxes[i].title == _XOR_("Inf xxx Backpack"))
             {
                 if (!gData.InfBackpack)
                 {
@@ -541,7 +541,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("Show All Map Icons"))
+            if (checkboxes[i].title == _XOR_("Show All xxx Map Icons"))
             {
                 if (!gData.ShowAllMapIcons)
                 {
@@ -582,7 +582,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("All Stratagems in Loadout"))
+            if (checkboxes[i].title == _XOR_("All Stratagems xxx in Loadout"))
             {
                 if (!gData.AllStratagems)
                 {
@@ -598,7 +598,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("All Equipment in Armory"))
+            if (checkboxes[i].title == _XOR_("All Equipment xxx in Armory"))
             {
                 if (!gData.AllEquipment)
                 {
@@ -614,7 +614,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
                 }
             }
 
-            if (checkboxes[i].title == _XOR_("All Armor in Armory"))
+            if (checkboxes[i].title == _XOR_("All Armor xxx in Armory"))
             {
                 if (!gData.AllArmor)
                 {
